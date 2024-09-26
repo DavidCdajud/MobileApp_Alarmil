@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="119dp"
+        android:layout_height="144dp"
+        android:contentDescription="@string/logo_desc"
+        android:src="@drawable/your_logo"
+        android:layout_marginBottom="16dp" /> <!-- Espacio debajo del logo -->
+
+    <!-- Título Login -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" /> <!-- Espacio debajo del título -->
+
+    <!-- Subtítulo de información -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/enter_info"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginBottom="24dp" /> <!-- Espacio debajo del subtítulo -->
+
+    <!-- Etiqueta de identificación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Número de identificación:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp" /> <!-- Espacio debajo de la etiqueta -->
+
+    <!-- Campo de texto de identificación -->
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" /> <!-- Espacio debajo del campo de identificación -->
+
+    <!-- Etiqueta de contraseña -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Contraseña:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp" /> <!-- Espacio debajo de la etiqueta -->
+
+    <!-- Campo de texto de contraseña -->
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp" /> <!-- Espacio debajo del campo de contraseña -->
+
+    <!-- Botón de Login -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="91sp"
+        android:layout_height="48sp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto"
+        android:text="@string/log_in_button"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

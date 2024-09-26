@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alamil</string>
+    <string name="logo_desc">Logo de la aplicación</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="enter_info">Ingrese sus información</string>
+    <string name="id_number">Numero de identificación</string>
+    <string name="password">Contraseña</string>
+    <string name="log_in_button">Log in</string>
+    <string name="fingerprint_desc">Autenticación por huella digital</string>
+</resources>
