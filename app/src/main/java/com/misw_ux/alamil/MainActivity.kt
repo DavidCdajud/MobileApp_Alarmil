@@ -1,46 +1,37 @@
 package com.misw_ux.alamil
 
+import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.misw_ux.alamil.ui.theme.AlamilTheme
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            AlamilTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+        setContentView(R.layout.activity_login)
+
+        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        btnLogin.setOnClickListener {
+            // Crear el popup de confirmación
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Autenticación exitosa")
+            builder.setMessage("¿Desea continuar?")
+
+            // Si se presiona "Sí", mostrar SplashActivity y luego redirigir a HomeActivity
+            builder.setPositiveButton("Sí") { _, _ ->
+                val splashIntent = Intent(this, SplashActivity::class.java)
+                splashIntent.putExtra("next_activity", HomeActivity::class.java)
+                startActivity(splashIntent)
             }
+
+            // Botón "No"
+            builder.setNegativeButton("No") { dialog, _ ->
+                dialog.dismiss()
+            }
+
+            // Mostrar el diálogo
+            builder.show()
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "David $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AlamilTheme {
-        Greeting("Android")
     }
 }

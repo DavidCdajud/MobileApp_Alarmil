@@ -14,7 +14,7 @@
         android:layout_height="144dp"
         android:contentDescription="@string/logo_desc"
         android:src="@drawable/your_logo"
-        android:layout_marginBottom="16dp" /> <!-- Espacio debajo del logo -->
+        android:layout_marginBottom="16dp" />
 
     <!-- Título Login -->
     <TextView
@@ -26,7 +26,7 @@
         android:textColor="@android:color/white"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp" /> <!-- Espacio debajo del título -->
+        android:layout_marginBottom="8dp" />
 
     <!-- Subtítulo de información -->
     <TextView
@@ -36,7 +36,7 @@
         android:text="@string/enter_info"
         android:textColor="@android:color/white"
         android:textSize="15sp"
-        android:layout_marginBottom="24dp" /> <!-- Espacio debajo del subtítulo -->
+        android:layout_marginBottom="24dp" />
 
     <!-- Etiqueta de identificación -->
     <TextView
@@ -46,16 +46,17 @@
         android:text="Número de identificación:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
-        android:layout_marginBottom="8dp" /> <!-- Espacio debajo de la etiqueta -->
+        android:layout_marginBottom="8dp" />
 
     <!-- Campo de texto de identificación -->
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:inputType="text"
-        android:layout_marginBottom="16dp" /> <!-- Espacio debajo del campo de identificación -->
+        android:inputType="text" />
 
     <!-- Etiqueta de contraseña -->
     <TextView
@@ -65,16 +66,17 @@
         android:text="Contraseña:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
-        android:layout_marginBottom="8dp" /> <!-- Espacio debajo de la etiqueta -->
+        android:layout_marginBottom="8dp" />
 
     <!-- Campo de texto de contraseña -->
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:inputType="textPassword"
-        android:layout_marginBottom="24dp" /> <!-- Espacio debajo del campo de contraseña -->
+        android:inputType="textPassword" />
 
     <!-- Botón de Login -->
     <Button
@@ -84,6 +86,7 @@
         android:backgroundTint="@color/white"
         android:fontFamily="@font/roboto"
         android:text="@string/log_in_button"
-        android:textColor="@android:color/black" />
+        android:textColor="#373535"
+        android:radius="19dp" />
 
 </LinearLayout>
