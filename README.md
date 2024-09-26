@@ -79,6 +79,6 @@ Elige tu emulador o dispositivo físico en la ventana emergente y la aplicación
 ## El proyecto utiliza las siguientes bibliotecas:
 
 MPAndroidChart: Para mostrar gráficos en la aplicación.
+
 AndroidX Libraries: Conjunto de bibliotecas para mejorar la compatibilidad y facilitar el desarrollo.
-Licencia
-Este proyecto está licenciado bajo la MIT License - consulta el archivo LICENSE para más detalles.
+
