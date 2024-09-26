@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:src="@drawable/your_logo"
+        android:contentDescription="Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Dropdown de misiones -->
+
+    <!-- BPM en el corazón -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#CDC9C9"
+        android:drawableTop="@drawable/ic_heart"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="115 BPM"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:tint="@color/black" />
+
+    <!-- Gráfico de BPM (puede ser una imagen estática por ahora) -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

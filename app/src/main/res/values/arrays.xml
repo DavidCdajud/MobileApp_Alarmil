@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Array de misiones -->
+    <string-array name="missions_array">
+        <item>M001</item>
+        <item>M002</item>
+        <item>M003</item>
+        <item>M004</item>
+        <!-- Agrega más misiones según sea necesario -->
+    </string-array>
+</resources>

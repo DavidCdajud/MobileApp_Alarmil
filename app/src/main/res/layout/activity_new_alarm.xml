@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:src="@drawable/your_logo"
+        android:contentDescription="Logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Título: Nueva alarma -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva alarma"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo Hora -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Hora"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvHora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:fontFamily="@font/roboto"
+            android:hint="hh:mm:ss"
+            android:padding="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textStyle="italic" />
+
+
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00B30707"
+            android:scaleType="centerCrop"
+            android:tint="@android:color/white"
+            android:id="@+id/btnPickTime"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Seleccionar hora"
+            android:src="@drawable/ic_clock"/>
+    </LinearLayout>
+
+    <!-- Campo Selección Misión -->
+    <Spinner
+        android:id="@+id/spinnerMission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:entries="@array/missions_array"
+        android:padding="10dp"
+        android:popupBackground="@color/white"
+        android:spinnerMode="dropdown" />
+
+    <!-- Notificación de alto impacto -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Notificación alto impacto:"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbYesHighImpact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sí"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/rbNoHighImpact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@android:color/white"/>
+
+        <!-- Icono de lápiz -->
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Editar"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_edit"
+            android:tint="@android:color/white" />
+    </RadioGroup>
+
+    <!-- Alarma fisiológica -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alarma fisiológica:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbYesPhysiological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sí"
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/rbNoPhysiological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@android:color/white"/>
+    </RadioGroup>
+
+    <!-- Botón Crear Alarma -->
+    <Button
+        android:id="@+id/btnCreateAlarm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/white"
+        android:text="Crear alarma"
+        android:textColor="@android:color/black" />
+</LinearLayout>
