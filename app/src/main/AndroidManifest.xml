@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_alarmi_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_alarmi_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alamil"
         tools:targetApi="31">
@@ -36,6 +36,17 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Alamil" />
+
+        <activity android:name=".MissionCreationActivity"
+            android:theme="@style/Theme.Alamil"/>
+
+        <activity android:name=".HeartRateActivity"
+            android:theme="@style/Theme.Alamil"/>
+
+        <activity android:name=".AlarmCreationActivity"
+            android:exported="true"
+            android:label="Nueva misión" />
+
     </application>
 
 

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -21,11 +22,11 @@
         android:id="@+id/tvMisiones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Misiones"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="30dp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
@@ -130,15 +131,16 @@ android:gravity="center"
 android:layout_marginStart="8dp"
 android:layout_marginEnd="8dp">
 
-<ImageButton
-    android:layout_width="48dp"
-    android:layout_height="48dp"
-    android:layout_marginBottom="8dp"
-    android:background="?android:attr/selectableItemBackground"
-    android:contentDescription="Agregar Misión"
-    android:scaleType="fitCenter"
-    android:src="@drawable/ic_add"
-    android:tint="@color/white" />
+    <ImageButton
+        android:id="@+id/btnAddMission"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Agregar Misión"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white" />
 
 <ImageButton
     android:layout_width="50dp"
@@ -154,21 +156,21 @@ android:layout_marginEnd="8dp">
     </LinearLayout>
 
     <!-- Alarms Section -->
-<TextView
-android:id="@+id/tvAlarms"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Alarmas"
-android:textSize="20sp"
-android:textStyle="bold"
-android:textColor="@android:color/white"
-android:layout_marginBottom="30dp"/>
+    <TextView
+        android:id="@+id/tvAlarms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Alarmas"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 <LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="horizontal">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
 
 <LinearLayout
@@ -176,8 +178,8 @@ android:orientation="horizontal">
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:background="@android:color/darker_gray"
-android:elevation="4dp"
-android:padding="8dp">
+    android:elevation="4dp"
+    android:padding="8dp">
 
 <TableLayout
     android:layout_width="match_parent"
@@ -185,7 +187,7 @@ android:padding="8dp">
     android:stretchColumns="1"
     android:background="@android:color/darker_gray"
     android:divider="@android:color/black"
-android:showDividers="middle">
+    android:showDividers="middle">
 
 <TableRow
     android:layout_width="match_parent"
@@ -259,22 +261,23 @@ android:showDividers="middle">
 
     <!-- Botones de Acción (Agregar, Quitar) para Alarmas -->
 <LinearLayout
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:orientation="vertical"
-android:gravity="center"
-android:layout_marginStart="8dp"
-android:layout_marginEnd="8dp">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
 
-<ImageButton
-    android:layout_width="48dp"
-    android:layout_height="48dp"
-    android:layout_marginBottom="8dp"
-    android:background="?android:attr/selectableItemBackground"
-    android:contentDescription="Agregar Alarma"
-    android:scaleType="fitCenter"
-    android:src="@drawable/ic_add"
-    android:tint="@color/white" />
+    <ImageButton
+        android:id="@+id/btnAddAlarm"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Agregar Alarma"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_add"
+        android:tint="@color/white" />
 
 <ImageButton
     android:layout_width="50dp"
@@ -297,15 +300,16 @@ android:orientation="horizontal"
 android:gravity="center"
 android:layout_marginTop="150dp">
 
-<ImageButton
-    android:layout_width="48dp"
-    android:layout_height="48dp"
-    android:layout_marginEnd="200dp"
-    android:background="?android:attr/selectableItemBackground"
-    android:contentDescription="Favorito"
-    android:scaleType="fitCenter"
-    android:src="@drawable/ic_heart"
-    android:tint="@color/white" />
+    <ImageButton
+        android:id="@+id/btnHeart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="200dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Favorito"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_heart"
+        android:tint="@color/white" />
 
 <ImageButton
     android:layout_width="48dp"

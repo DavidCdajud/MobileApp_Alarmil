@@ -11,6 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        supportActionBar?.show()
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener {
             // Crear el popup de confirmación
@@ -21,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             // Si se presiona "Sí", mostrar SplashActivity y luego redirigir a HomeActivity
             builder.setPositiveButton("Sí") { _, _ ->
                 val splashIntent = Intent(this, SplashActivity::class.java)
-                splashIntent.putExtra("next_activity", HomeActivity::class.java)
+                splashIntent.putExtra("next_activity", HomeActivity::class.java.name)  // Pasamos el nombre de la actividad
                 startActivity(splashIntent)
             }
 
